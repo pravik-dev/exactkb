@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resize Photo to 50KB & Signature to 20KB Online | ExactKB.In</title>
+<meta name="description" content="Resize photo to 50KB, signature to 20KB and image under size limits for government exams and university forms. Fast, free and form-ready.">
+<meta name="keywords" content="photo resize 50kb, signature resize 20kb, image under 50kb, exam photo size">
+<meta name="author" content="ExactKB">
+<meta name="robots" content="index, follow">
+<meta name="language" content="en-IN">
+<meta name="geo.region" content="IN">
+<meta name="geo.placename" content="India">
+<meta name="theme-color" content="#0b5ed7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="canonical" href="https://exactkb.in/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b5ed7'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>KB</text></svg>">
+<meta name="google-site-verification" content="G-DuNdqI2saccjCQzTbUiyOhi1LwAAxxYz4UHbOjd38">
+
+<meta property="og:title" content="ExactKB – Resize Photo & Signature to Exact KB">
+<meta property="og:description" content="Resize photo to 50KB, signature to 20KB for government & exam forms. Free & secure online tool.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://exactkb.in/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ExactKB – Resize Images to Exact KB">
+<meta name="twitter:description" content="Resize photo & signature to exact size for online forms.">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>ExactKB</h1>
+    <p>Make your photo &amp; signature <strong>form-ready</strong> in seconds</p>
+</header>
+
+<main class="container">
+    <section class="tool-card" aria-labelledby="toolTitle">
+        <h2 id="toolTitle">Resize Image to Exact KB</h2>
+        <p class="hint">Perfect for government exams &amp; university forms</p>
+
+        <!-- Step 1 -->
+        <p class="step"><span>1</span> Choose your image</p>
+        <label class="dropzone" id="dropzone" for="imageInput">
+            <span class="dz-icon" aria-hidden="true">📁</span>
+            <strong>Tap to choose an image</strong>
+            <small>or drag &amp; drop here · JPG, PNG, WebP</small>
+        </label>
+        <input type="file" id="imageInput" accept="image/*" class="visually-hidden">
+
+        <div class="preview-box" id="previewBox" hidden>
+            <img id="previewImage" alt="Preview of your selected image">
+            <div class="file-info">
+                <strong id="fileName"></strong>
+                <span id="fileMeta"></span>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <p class="step"><span>2</span> Pick target size</p>
+        <div class="size-row">
+            <input type="number" id="targetSize" value="50" min="5" max="5000" inputmode="numeric" aria-label="Target size in KB">
+            <span class="unit">KB</span>
+        </div>
+
+        <div class="presets">
+            <div class="preset-column">
+                <p class="preset-title">📸 Photo</p>
+                <div class="chips">
+                    <button type="button" class="preset-btn" data-size="20">20 KB</button>
+                    <button type="button" class="preset-btn" data-size="30">30 KB</button>
+                    <button type="button" class="preset-btn" data-size="50">50 KB</button>
+                </div>
+            </div>
+            <div class="preset-column">
+                <p class="preset-title">✍️ Signature</p>
+                <div class="chips">
+                    <button type="button" class="preset-btn" data-size="10">10 KB</button>
+                    <button type="button" class="preset-btn" data-size="20">20 KB</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <p class="step"><span>3</span> Resize</p>
+        <button type="button" id="resizeBtn" class="primary-btn" disabled>Resize Image</button>
+
+        <div id="processing" class="processing" hidden role="status" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p id="processingText">Processing…</p>
+        </div>
+
+        <p id="errorMsg" class="error-msg" role="alert" hidden></p>
+
+        <div id="resultCard" class="result-card" hidden aria-live="polite">
+            <p class="result-title" id="resultTitle">✅ Done!</p>
+            <div class="stats">
+                <div><small>Before</small><strong id="sizeBefore">--</strong></div>
+                <div class="arrow" aria-hidden="true">→</div>
+                <div><small>After</small><strong id="sizeAfter">--</strong></div>
+            </div>
+            <p class="result-meta" id="resultMeta"></p>
+            <a id="downloadLink" class="primary-btn download-btn" href="#">⬇ Download Image</a>
+        </div>
+    </section>
+</main>
+
+<section class="info">
+    <h2>Why ExactKB?</h2>
+    <ul>
+        <li>✔ Gets as close to your KB limit as possible</li>
+        <li>✔ No login required</li>
+        <li>✔ Files never leave your device</li>
+    </ul>
+</section>
+
+<section class="seo">
+    <h2>How to Resize Photo to 50KB for Online Forms?</h2>
+    <p>
+        ExactKB helps students resize photos and signatures to the exact KB limits required by government exams,
+        universities and online registration forms. Upload your image, choose a preset, and download.
+    </p>
+</section>
+
+<section class="feedback">
+    <h2>💬 Share Your Experience</h2>
+    <p>Did ExactKB help you? Any issue or suggestion?</p>
+    <form id="feedbackForm">
+        <input type="text" id="fbName" placeholder="Your name (optional)" aria-label="Your name (optional)">
+        <textarea id="fbMessage" placeholder="Write your feedback here..." required aria-label="Your feedback"></textarea>
+        <button type="submit">Send Feedback</button>
+    </form>
+    <p id="fbStatus" class="fb-status" role="status"></p>
+</section>
+
+<footer class="footer">
+    <p>© 2026 ExactKB.in | Built for students ❤️</p>
+</footer>
+
+<script src="resize.js" defer></script>
+<script src="https://cdn.counter.dev/script.js" data-id="5bf0b57f-8265-42f9-b894-453feadb8c5b" data-utcoffset="6" defer></script>
+</body>
+</html>
